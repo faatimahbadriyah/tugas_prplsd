@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}Hadis{% endblock %}
+
+{% block content %}
+
+
+<div class="row">
+	<div class="col-md-6">		
+		<div class="input-group">
+		  <input type="text" class="form-control" size="50" placeholder="Masukan terjemah hadis">
+		  <div class="input-group-btn">
+		   	<a href="{% url 'hasil' %} " class="btn btn-primary"><i class="fa fa-search"></i></a>
+		  </div>
+		</div>
+	</div>
+</div>	
+<br>
+{% for data in hadis %}
+	<p style="font-size: 12px;"><i class="fa fa-check"></i>  {{ data.hadis }}</p>
+{% endfor %}
+
+
+{% endblock %}

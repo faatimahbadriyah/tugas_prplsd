@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}Hadis{% endblock %}
+
+{% block content %}
+
+<h2 class="text-center">PENCARIAN</h2>
+<hr style="color: black; border-top: 1px solid grey;">
+<br><br><br><br>
+<div class="row">
+	<div class="col-md-2"></div>
+	<div class="col-md-8 pull-center">		
+		<div class="input-group">
+		  <input type="text" class="form-control" size="50" placeholder="Masukan terjemah hadis">
+		  <div class="input-group-btn">
+		   	<a href="{% url 'hasil' %} " class="btn btn-primary"><i class="fa fa-search"></i></a>
+		  </div>
+		</div>
+	</div>
+	<div class="col-md-2"></div>
+</div>	
+<br><br><br><br>
+
+
+
+{% endblock %}

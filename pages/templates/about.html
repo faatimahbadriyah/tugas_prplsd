@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Halaman About{% endblock %}
+
+{% block content %}
+
+<h2 class="text-center">TENTANG WEBSITE</h2>
+<hr style="color: black; border-top: 1px solid grey;">
+<br>
+<p style="text-align: justify; font-size: 1.2vw;">
+	<strong>HadisSite</strong> merupakan sebuah website yang berisi tentang kumpulan hadis. Pengunjung dapat melakukan pencarian berdasarkan terjemah hadis berbahasa indonesia atau kategori yang telah disediakan. 
+</p>
+<p style="text-align: justify; font-size: 1.2vw;">
+	Website ini dibangun dengan menggunakan bahasa pemrograman <i>Python</i> dan framework <i>Django</i>. Dalam rangka memenuhi Tugas Besar Ujian Akhir Semester pada Mata Kuliah Praktikum Rekayasa Perangkat Lunak Spesifik Domain.
+</p>
+<br><br><br><br>
+
+<div class="row">
+	<div class="col-md-4">
+	</div>
+	<div class="col-md-1">
+		<center><img src="{% static 'images/instagram.png' %} " width="50px"></center>
+	</div>
+	<div class="col-md-1">
+		<center><img src="{% static 'images/google.png' %} " width="50px"></center>
+	</div>
+	<div class="col-md-1">
+		<center><img src="{% static 'images/facebook.png' %} " width="50px"></center>
+	</div>
+	<div class="col-md-1">
+		<center><img src="{% static 'images/twitter.png' %} " width="50px"></center>
+	</div>
+	<div class="col-md-4">
+	</div>
+</div>
+
+{% endblock %}
